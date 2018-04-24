@@ -13,3 +13,4 @@ window.addEventListener('load',()=>{
     menu.classList.toggle("hidden");
   }
     
+});
