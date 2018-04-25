@@ -1,5 +1,5 @@
 let template = document.querySelector("#musictemp").content;
-let musiclist = document.querySelector("#music");
+let musiclist = document.querySelector("#musiclist");
 let page = 1;
 let lookingForData = false;
 
