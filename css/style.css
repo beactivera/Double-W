@@ -103,14 +103,14 @@ html, body {
     text-align: center;
 }
 @media (min-width: 1000px)  {
-  #carlist {
+  #musiclist {
     grid-template-columns: 1fr 1fr;
   }
 
 }
 
 @media (min-width: 1300px)  {
-  #carlist {
+  #music {
     grid-template-columns: 1fr 1fr 1fr;
   }
 

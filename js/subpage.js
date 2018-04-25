@@ -3,7 +3,7 @@ let urlParams = new URLSearchParams(window.location.search);
 let id =urlParams.get('id');
 console.log('I want to get to article '+ id);
 
-fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music/'+id).then(e =>e.json).then(showSinglePost);
+fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed/'+id).then(e =>e.json).then(showSinglePost);
 
 function showSinglePost(aPost){
     console.log(aPost);
