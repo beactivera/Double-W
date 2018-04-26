@@ -3,6 +3,7 @@
 }
 * {
   box-sizing: border-box;
+    overflow-x: hidden;
 }
 html, body {
   margin: 0;
