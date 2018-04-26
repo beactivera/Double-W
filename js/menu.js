@@ -14,16 +14,16 @@ window.addEventListener('load',()=>{
   }
     
     
-  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music').then(e => e.json()).then(buildMenu)
+  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed').then(e => e.json()).then(buildMenu)
     
     function buildMenu(data){
         let parentElement = document.querySelector('.menu ul')
-        data[categories].forEach(item =>{
+        data.forEach(item =>{
             console.log(item);
             let li = document.createElement('li');
             let a = document.createAttribute('a');
             a.textContent = item.name;
-            a.href = 'index.html?category='+ item.id;
+            a.href = 'index.html?genre='+ item.acf.genre;
             
             li.appendChild(a);
             parentElement.appendChild(li);
