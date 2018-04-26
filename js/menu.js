@@ -13,4 +13,24 @@ window.addEventListener('load',()=>{
     menu.classList.toggle("hidden");
   }
     
+    
+  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/categories?per_page=50').then(e => e.json()).then(buildMenu)
+    
+    function buildMenu(data){
+        let parentElement = document.querySelector('.menu ul')
+        data.forEach(item =>{
+            console.log(item);
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            if(item.parent == 5){
+            a.textContent = item.name;
+            a.href = 'index.html?categories='+ item.id;
+            
+            li.appendChild(a);
+            parentElement.appendChild(li);
+            }
+        })
+    } 
 });
+    
+    
