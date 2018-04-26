@@ -8,10 +8,10 @@ function fetchMusic(){
     
     let urlParams = new URLSearchParams(window.location.search);
 
-    let catid =urlParams.get('acf');
+    let tagid =urlParams.get('tags');
     let endpoint = 'http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page='+page;
-    if(catid){ // DRY
-     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page="+page+'&acf/genre='+ catid;
+    if(tagid){ // DRY
+     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page="+page+'&tags='+ tagid;
     }
     fetch(endpoint)
     .then(e => e.json())
