@@ -8,10 +8,10 @@ function fetchMusic(){
     
     let urlParams = new URLSearchParams(window.location.search);
 
-    let tagid =urlParams.get('tags');
+    let catid =urlParams.get('categories');
     let endpoint = 'http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page='+page;
-    if(tagid){ // DRY
-     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page="+page+'&tags='+ tagid;
+    if(catid){ // DRY
+     endpoint = "http://wilmakorpinen.com/wp00/wp-json/wp/v2/music?_embed&per_page=2&page="+page+'&categories='+ catid;
     }
     fetch(endpoint)
     .then(e => e.json())
@@ -35,7 +35,7 @@ function showSingleMusic(aMusic){
       clone.querySelector("img").remove()
   }
 
-  clone.querySelector('.readmore').href = 'subpage.html?music?_embed/id=' + aMusic.id;
+  clone.querySelector('.readmore').href = 'subpages.html?id=' + aMusic.id;
 
   musiclist.appendChild(clone);
 }

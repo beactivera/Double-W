@@ -14,7 +14,7 @@ window.addEventListener('load',()=>{
   }
     
     
-  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music').then(e => e.json()).then(buildMenu)
+  fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/categories?per_page=50').then(e => e.json()).then(buildMenu)
     
     function buildMenu(data){
         let parentElement = document.querySelector('.menu ul')
@@ -22,12 +22,13 @@ window.addEventListener('load',()=>{
             console.log(item);
             let li = document.createElement('li');
             let a = document.createElement('a');
-            a.textContent = item.tags;
-            a.href = 'index.html?tags='+ item.tags;
+            if(item.parent == 5){
+            a.textContent = item.name;
+            a.href = 'index.html?categories='+ item.id;
             
             li.appendChild(a);
             parentElement.appendChild(li);
-            
+            }
         })
     } 
 });
