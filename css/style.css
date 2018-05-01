@@ -68,8 +68,9 @@ html, body {
 .so-me{
     position: fixed;
     top:60px;
+    right: 0;
     height: 80%;
-    width: 100%;
+    width: 10%;
 }
 .so-me .icon-fb{
     background-image: url(../images/icons_some_fb_black.svg);
@@ -270,6 +271,8 @@ article:nth-child(even) img{
 }
 #singleMusic .descript{
     grid-column: 1/-1;
+}
+#singleMusic .descript p{
     font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
