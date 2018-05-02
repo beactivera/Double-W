@@ -106,15 +106,9 @@ html, body {
     margin-left: 50px;
     width: 40%;
     height: 70%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-image: url('/images/logo_huset.png');
-=======
     background-image: url('../images/Huset_logo_9_B.png');
->>>>>>> 082099849aa545499a13dee6750d7aad7d39e854
-=======
     background-image: url('../images/huset-logo-white.png');
->>>>>>> 9cbc8b63498504e8ee3ae7fe61f4e2786472548d
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
@@ -135,9 +129,9 @@ html, body {
     top:0;
    right: 0;
     margin-top: 17px;
-    margin-right: 50px;
+    margin-right: 70px;
     background-image: url('../images/search_icon.svg');
-    width: 23%;
+    width: 15%;
     height: 50%;
     background-repeat: no-repeat;   
 }
@@ -147,7 +141,7 @@ html, body {
     right: 0;
     margin-top: 25px;
     margin-right: 25px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-family: Avenir Next, sans-serif;
 }
@@ -172,7 +166,6 @@ html, body {
 }
 .title-desc img{
     margin: 20px;
-    position: block;
     width: 20%;
 }
 h1{
