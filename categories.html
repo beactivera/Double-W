@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Web App</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="appbar">
+    <svg class="menuIcon" viewBox="0 0 100 100">
+      <rect class="myrect" x="10" y="10" width="80" height="10" rx="5" ry="5"/>
+      <rect class="myrect" x="10" y="30" width="80" height="10" rx="5" ry="5"/>
+      <rect class="myrect" x="10" y="50" width="80" height="10" rx="5" ry="5"/>
+       </svg>
+       <div class="image-header">
+       </div>
+       <div class="search-header">
+           
+       </div>
+       <div class="log-header">
+           Log in
+       </div>
+  </header>
+  <aside class="so-me">
+      <div class="icon-fb"></div>
+      <div class="icon-twitter"></div>
+      <div class="icon-insta"></div>
+  </aside>
+  <aside class="menu hidden">
+   Which genre do you prefer?
+    <ul>
+    </ul>
+    <ul>
+    <li >ABOUT</li>
+    <li >CONTACT</li>
+      </ul>
+  </aside>   
+  <div class="container-fluid">
+    <section id="musiclist">
+      <template id="musictemp">
+        <article class="music-event">
+          <h1 class="music-title">TITLE</h1>
+          <img class="eventimage" src="" alt="">
+          <h2 class="weekday">WEEKDAY</h2>
+          <h2 class="date">DATE</h2>
+          <h2 class="price">DKK<span>PRICE</span></h2>
+          <p><a class="readmore" href="">Read more</a></p>
+        </article>
+      </template>
+    </section>
+  </div>
+  
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
