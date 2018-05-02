@@ -20,11 +20,22 @@ html, body {
   position: fixed;
 }
 .menu {
+    padding: 40px;
   top: var(--header-height);
   height: 100vh;
   width: 100vw;
   transition: all 0.3s 0.3s;
   color: white;
+  font-size:30px;
+  font-family: Avenir Next, sans-serif;
+}
+.menu li{
+    padding: 10px;
+    list-style-type: none;
+}
+.menu ul a{
+   color: white;
+    font-size: 35px;     
 }
 .menu.hidden {
   transform: translateX(-100vw);
@@ -33,6 +44,7 @@ html, body {
   height: 30px;
   margin-top: 10px;
   margin-left: 12px;
+    color: white;
 }
 .menuIcon rect {
   fill: white;
@@ -53,34 +65,81 @@ html, body {
 .menuIcon rect.rotateDown {
   transform: rotate(45deg) translate(17px, -14px);
 }
+.so-me{
+    position: fixed;
+    top:60px;
+    right: 0;
+    height: 80%;
+    width: 10%;
+}
+.so-me .icon-fb{
+    background-image: url(../images/icons_some_fb_black.svg);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
+.so-me .icon-twitter{
+    background-image: url(../images/icons_some_twitter_black.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
+.so-me .icon-insta{
+    background-image: url('../images/icons_some_insta_black.svg');
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    background-position: right;
+    width: 100%;
+    height: 7%;
+    opacity: .99;
+}
 .image-header{
     position: absolute;
     top:0;
     margin-top: 10px;
     margin-left: 50px;
-    width: 60%;
+    width: 40%;
     height: 70%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     background-image: url('/images/logo_huset.png');
 =======
     background-image: url('../images/Huset_logo_9_B.png');
 >>>>>>> 082099849aa545499a13dee6750d7aad7d39e854
+=======
+    background-image: url('../images/huset-logo-white.png');
+>>>>>>> 9cbc8b63498504e8ee3ae7fe61f4e2786472548d
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    
+    background-position: center; 
+}
+.image-subpage-header{
+   position: absolute;
+    top:0;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 36%;
+    height: 70%;
+    background-image: url('../images/music-title-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
 }
 .search-header{
     position:absolute;
     top:0;
    right: 0;
-    margin-top: 20px;
-    margin-right: 25px;
+    margin-top: 17px;
+    margin-right: 50px;
     background-image: url('../images/search_icon.svg');
     width: 23%;
     height: 50%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 .log-header{
     position:absolute;
@@ -96,79 +155,178 @@ html, body {
     margin-top: 80px;
     text-align: center;
     background-image: url('../images/music_background_image.svg');
-    
-   
-    
+    background-repeat: no-repeat;
+}
+.title-web img{
+    display: block;
 }
 .title-desc{
-    padding: 10px;
+    padding: 18px;
     padding-left: 15px;
     padding-right: 15px;
-    text-align: left;
-    font-size: 17px;
+    text-align: center;
+    font-size: 15px;
     font-family: Avenir Next, sans-serif;
     background-color: #D51B39;
     color: white;
 }
-.arrow-down{
-    position: relative;
-    background-image: url('../images/arrow_down_red.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.title-desc img{
+    margin: 20px;
+    position: block;
+    width: 20%;
 }
-
-
+h1{
+    font-family: Avenir Next, sans-serif;
+    color:#1B1862;
+}
 .readmore{
     font-family: Avenir Next bold, sans-serif;
     color: #D51B39;
 }
-
 img {
-    align-content: center;
-    
+    align-content: center;  
 }
-
 .eventimage {
     align-content: center;
 }
-
 .price{
    font-family: Avenir Next, sans-serif;
     color: #D51B39; 
 }
-
-.heading {
-    font-family: Avenir Next, sans-serif;
-    color: #D51B39; 
+.music-title{
+    font-size: 40px;
+    font-weight: 200;
+    color: black;
 }
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
-  
-
 .container-fluid h1{
     text-align: center;
+}
+.music-event{
     font-family: Avenir Next, sans-serif;
+    text-align: right;
+}
+article:nth-child(odd) img{
+  box-shadow: -39px -21px 0px 4px rgba(213,27,57,1);
+}
+article:nth-child(even) img{
+  box-shadow: -39px -21px 0px 4px rgba(0,0,50,1);
+}
+.container-fluid .price{
+    text-align: right;
+    margin-right: 10px;
+}
+.container-fluid p .readmore{
+    text-align: right;
+    margin-right: 10px;
+    color: black; 
+    font-weight: 400;
+}
+.music-event h1{
+    padding: 15px;
+}
+.music-event img{
+    display: block;
+    margin-left: 20px;
+}
+.music-event h2{
+    display: inline-block;
+    font-size: 17px;
+    padding-left: 20px;
+}
+#singleMusic{
+   font-family: Avenir Next, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#singleMusic h1{
+  padding-top: 10px; 
+  grid-column: 1/-1;
+    font-size: 30px;
+}
+#singleMusic img{
+    display: block;
+    grid-column: 1/-1;
+   grid-row: 2/3;
+    width: 100%;    
+}
+#singleMusic .genre {
+   grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+#singleMusic .price{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+#singleMusic .date{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+#singleMusic .location{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 18px;
+    padding: 5px; 
+    text-align: center;
+}
+#singleMusic .descript{
+    grid-column: 1/-1;
+}
+#singleMusic .descript p{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width:450px){
+    .image-header{
+        width: 60%;
+    }
+    .image-subpage-header{
+        margin-top: 10px;
+        width:60%;
+    }
+    .search-header{
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+    .music-event h2{
+        padding-left: 40px;
+    }
+    .menu{
+        padding: 20px;
+    }
+    .menu li{
+        padding: 40px;
+    }
+    .menu ul a{
+        font-size: 35px;
+    }
+    .title-desc{
+        font-size:17px;
+    }
+    .title-desc img{
+        width:30%;
+    }
+    #singleMusic .descript{
+        font-size:17px;
+        padding: 0;
+    }
 }
 @media (min-width: 1000px)  {
   #musiclist {
     grid-template-columns: 1fr 1fr;
   }
-
 }
-
 @media (min-width: 1300px)  {
   #music {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
