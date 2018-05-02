@@ -3,6 +3,7 @@
 }
 * {
   box-sizing: border-box;
+    overflow-x: hidden;
 }
 html, body {
   margin: 0;
@@ -59,7 +60,11 @@ html, body {
     margin-left: 50px;
     width: 60%;
     height: 70%;
+<<<<<<< HEAD
     background-image: url('/images/logo_huset.png');
+=======
+    background-image: url('../images/Huset_logo_9_B.png');
+>>>>>>> 082099849aa545499a13dee6750d7aad7d39e854
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -71,7 +76,7 @@ html, body {
    right: 0;
     margin-top: 20px;
     margin-right: 25px;
-    background-image: url(/images/search_icon.svg);
+    background-image: url('../images/search_icon.svg');
     width: 23%;
     height: 50%;
     background-repeat: no-repeat;
@@ -82,7 +87,7 @@ html, body {
     top:0;
     right: 0;
     margin-top: 25px;
-    margin-right: 10px;
+    margin-right: 25px;
     font-size: 20px;
     color: white;
     font-family: Avenir Next, sans-serif;
@@ -90,7 +95,7 @@ html, body {
 .title-web{
     margin-top: 80px;
     text-align: center;
-    background-image: url(/images/music_background_image.svg);
+    background-image: url('../images/music_background_image.svg');
     
    
     
@@ -107,7 +112,7 @@ html, body {
 }
 .arrow-down{
     position: relative;
-    background-image: url(/images/arrow_down_red.svg);
+    background-image: url('../images/arrow_down_red.svg');
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
