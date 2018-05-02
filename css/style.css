@@ -278,6 +278,21 @@ article:nth-child(even) img{
     padding-left: 15px;
     padding-right: 15px;
 }
+#singleMusic .buy{
+    display: none;
+    grid-column: 1/-1;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #D51B39;
+;
+    font-family: Avenir Next, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    border: solid;
+}
 @media (min-width:450px){
     .image-header{
         width: 60%;

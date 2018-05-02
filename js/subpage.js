@@ -14,4 +14,7 @@ document.querySelector('#singleMusic h1').textContent = aPost.title.rendered;
     document.querySelector('#singleMusic .date').textContent = aPost.acf.data;
     document.querySelector('#singleMusic .location').textContent = aPost.acf.location;
     document.querySelector('#singleMusic .descript').innerHTML = aPost.content.rendered;
+    if(aPost.acf.price >0){
+        document.querySelector('#singleMusic .buy').style.display = "block";
+    }
 }
