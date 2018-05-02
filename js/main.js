@@ -28,6 +28,14 @@ function showSingleMusic(aMusic){
   let clone = template.cloneNode(true);
   clone.querySelector("h1").textContent = aMusic.title.rendered;
   clone.querySelector(".price span").textContent=aMusic.acf.price;
+    
+  clone.querySelector(".weekday").textContent = aMusic.acf.weekday;
+
+    let month = aMusic.acf.data.substring(0, 2);
+    var day = aMusic.acf.data.substring(2, 4);
+    var year = aMusic.acf.data.substring(4, 8);
+
+    clone.querySelector(".date").textContent = month + "" + day + "" + year;
 
   if(aMusic._embedded["wp:featuredmedia"]){//img is there
      clone.querySelector("img").setAttribute("src", aMusic._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url)
