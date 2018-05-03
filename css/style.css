@@ -71,6 +71,7 @@ html, body {
     right: 0;
     height: 80%;
     width: 10%;
+    z-index: 10;
 }
 .so-me .icon-fb{
     background-image: url(../images/icons_some_fb_black.svg);
@@ -106,8 +107,6 @@ html, body {
     margin-left: 50px;
     width: 40%;
     height: 70%;
-    background-image: url('/images/logo_huset.png');
-    background-image: url('../images/Huset_logo_9_B.png');
     background-image: url('../images/huset-logo-white.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -146,15 +145,19 @@ html, body {
     font-family: Avenir Next, sans-serif;
 }
 .title-web{
+    position: relative;
     margin-top: 80px;
-    text-align: center;
-    background-image: url('../images/music_background_image.svg');
-    background-repeat: no-repeat;
+    width: 100%;
 }
-.title-web img{
-    display: block;
+.title-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 40px;
+    font-family: Avenir Next bol, sans-serif;
+    color: #D51B39;
 }
-.title-desc{
+.small-desc{
     padding: 18px;
     padding-left: 15px;
     padding-right: 15px;
@@ -164,7 +167,7 @@ html, body {
     background-color: #D51B39;
     color: white;
 }
-.title-desc img{
+.small-desc img{
     margin: 20px;
     width: 20%;
 }
