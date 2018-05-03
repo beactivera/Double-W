@@ -13,6 +13,13 @@ window.addEventListener('load',()=>{
     menu.classList.toggle("hidden");
   }
     
+//  let imageHeader = document.querySelector('.image-header').onclick = function(){
+//      location.href = "http://beactivera.com/kea/music-web-app/";
+//  }
+//  let imageSubHeader = document.querySelector('.image-subpage-header').onclick = moveToHome();
+//    function moveToHome(){
+//      location.href = "http://beactivera.com/kea/music-web-app/";
+//  }
     
   fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/categories?per_page=50').then(e => e.json()).then(buildMenu)
     
