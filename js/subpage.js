@@ -7,6 +7,7 @@ fetch('http://wilmakorpinen.com/wp00/wp-json/wp/v2/music/'+id +'?_embed').then(e
 
 function showSinglePost(aPost){
     console.log(aPost);
+    document.querySelector('.container-fluid').style.marginTop = "60px";
 document.querySelector('#singleMusic h1').textContent = aPost.title.rendered;
     document.querySelector("img").setAttribute("src", aPost._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url);
     document.querySelector('#singleMusic .genre').textContent = aPost.acf.genre;
@@ -14,7 +15,7 @@ document.querySelector('#singleMusic h1').textContent = aPost.title.rendered;
     document.querySelector('#singleMusic .date').textContent = aPost.acf.data;
     document.querySelector('#singleMusic .location').textContent = aPost.acf.location;
     document.querySelector('#singleMusic .descript').innerHTML = aPost.content.rendered;
-    if(aPost.acf.price >0){
+    if(aPost.acf.price >=0){
         document.querySelector('#singleMusic .buy').style.display = "block";
     }
 }
